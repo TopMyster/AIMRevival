@@ -34,6 +34,18 @@ label,
   font-size: 13px !important;
 }
 
+.window {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.window-body {
+  flex: 1 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .title-bar-text {
   font-weight: bold !important;
 }
@@ -73,4 +85,13 @@ label,
 .supabase-auth-ui_ui-anchor {
   color: #0000ff !important;
   text-decoration: underline !important;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
