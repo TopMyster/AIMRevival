@@ -22,13 +22,10 @@ html {
 
 button,
 input,
-textarea,
 select,
 label,
 .window,
 .window-body,
-.title-bar,
-.title-bar-text,
 .winxp-font {
   font-family: 'XP', Tahoma, sans-serif !important;
   font-size: 13px !important;
@@ -94,4 +91,16 @@ label,
   padding: 10px;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.user-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex: 1;
 }

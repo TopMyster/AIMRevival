@@ -72,8 +72,9 @@ export default function Chat() {
                     backgroundColor: '#fff',
                     border: '1px solid #7f9db9',
                     padding: '10px',
+                    fontSize: 20,
                     marginBottom: '10px',
-                    fontFamily: 'XP'
+                    fontFamily: 'Times New Roman'
                 }}
             >
                 {messages.length === 0 ? (
@@ -96,8 +97,8 @@ export default function Chat() {
                 onMouseDown={(e) => e.stopPropagation()}
                 onClick={(e) => e.stopPropagation()}
             >
-                <div style={{ flex: 1 }}>
-                    <input
+                <div className='user-chat'>
+                    <textarea
                         className="supabase-auth-ui_ui-input"
                         placeholder="Type a message..."
                         value={newMessage}
@@ -106,9 +107,10 @@ export default function Chat() {
                         autoFocus
                         style={{
                             width: '100%',
-                            height: '24px',
-                            padding: '4px',
-                            fontFamily: 'XP'
+                            height: '100%',
+                            padding: '10px',
+                            fontSize: 20,
+                            fontFamily: 'Times New Roman'
                         }}
                     />
                 </div>
